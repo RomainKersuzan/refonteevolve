@@ -31,7 +31,7 @@ const team = [
     image: '/photo-mahmoud.png',
   },
   {
-    name: 'Max Coasta',
+    name: 'Max Costa',
     role: 'Expert SEO',
     description: 'Spécialiste en référencement naturel et stratégies SEO. Optimise votre visibilité en ligne et booste votre trafic organique.',
     linkedin: 'https://www.linkedin.com',
@@ -276,14 +276,14 @@ export default function AProposPage() {
                 </a>
               </div>
 
-              {/* Max Coasta */}
+              {/* Max Costa */}
               <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl shadow-xl p-8">
                 <div className="flex items-center gap-6 mb-6">
                   <div className="flex-shrink-0">
                     <div className="relative w-24 h-24">
                       <Image 
                         src="/photo-max.webp" 
-                        alt="Max Coasta" 
+                        alt="Max Costa" 
                         fill
                         className="rounded-full object-cover shadow-lg ring-4 ring-orange-100"
                       />
@@ -294,7 +294,7 @@ export default function AProposPage() {
                   </div>
                   
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-1">Max Coasta</h3>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-1">Max Costa</h3>
                     <p className="text-lg text-orange-600 font-semibold mb-2">Expert SEO</p>
                     <div className="flex items-center gap-1">
                       {[...Array(5)].map((_, i) => (

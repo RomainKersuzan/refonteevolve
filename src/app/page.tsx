@@ -129,7 +129,7 @@ const team = [
     linkedin: 'https://www.linkedin.com',
   },
   {
-    name: 'Max Coasta',
+    name: 'Max Costa',
     role: 'Expert SEO',
     image: '/photo-max.webp',
     linkedin: 'https://www.linkedin.com',

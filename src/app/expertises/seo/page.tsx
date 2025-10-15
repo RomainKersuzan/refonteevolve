@@ -65,7 +65,7 @@ export default function SEOPage() {
     <div className="pt-0">
       <AnimatedHero 
         title="Expertise SEO & Référencement Naturel" 
-        subtitle="Boostez votre visibilité sur Google et générez plus de trafic qualifié. Notre expert SEO Max Coasta optimise votre référencement naturel pour des résultats durables."
+        subtitle="Boostez votre visibilité sur Google et générez plus de trafic qualifié. Notre expert SEO Max Costa optimise votre référencement naturel pour des résultats durables."
         highlightedWord="SEO"
       />
 
@@ -174,14 +174,14 @@ export default function SEOPage() {
                   <div className="relative w-32 h-32">
                     <img 
                       src="/photo-max.webp" 
-                      alt="Max Coasta" 
+                      alt="Max Costa" 
                       className="w-full h-full rounded-full object-cover shadow-lg ring-4 ring-indigo-100"
                     />
                   </div>
                 </div>
                 
                 <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-3xl font-bold mb-2 text-gray-900">Max Coasta</h3>
+                  <h3 className="text-3xl font-bold mb-2 text-gray-900">Max Costa</h3>
                   <p className="text-xl text-indigo-600 font-semibold mb-3">Expert SEO & Stratégie Digitale</p>
                   <div className="flex items-center justify-center md:justify-start gap-1 mb-4">
                     {[...Array(5)].map((_, i) => (
