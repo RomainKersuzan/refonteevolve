@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="shopifyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Shopify inspired logo -->
+  <rect x="10" y="10" width="80" height="80" rx="15" fill="url(#shopifyGrad)"/>
+  <!-- Shopping bag -->
+  <path d="M 35 35 L 35 65 L 65 65 L 65 35 L 60 35 Q 60 28 50 28 Q 40 28 40 35 Z" fill="white"/>
+  <circle cx="45" cy="50" r="2" fill="url(#shopifyGrad)"/>
+  <circle cx="55" cy="50" r="2" fill="url(#shopifyGrad)"/>
+</svg>
+

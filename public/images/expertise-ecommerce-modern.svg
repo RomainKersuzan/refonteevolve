@@ -1,0 +1,40 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ecomGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="#fef2f2"/>
+  
+  <!-- Main Shape -->
+  <circle cx="300" cy="200" r="120" fill="url(#ecomGrad)" opacity="0.1"/>
+  <circle cx="300" cy="200" r="90" fill="url(#ecomGrad)" opacity="0.2"/>
+  
+  <!-- Rocket Icon -->
+  <g transform="translate(260, 140)">
+    <!-- Body -->
+    <ellipse cx="40" cy="60" rx="18" ry="50" fill="url(#ecomGrad)"/>
+    <!-- Window -->
+    <circle cx="40" cy="45" r="10" fill="white" opacity="0.4"/>
+    <!-- Fins -->
+    <path d="M 22 70 L 15 95 L 30 85 Z" fill="url(#ecomGrad)" opacity="0.8"/>
+    <path d="M 58 70 L 65 95 L 50 85 Z" fill="url(#ecomGrad)" opacity="0.8"/>
+    <!-- Flames -->
+    <ellipse cx="40" cy="112" rx="12" ry="8" fill="#fbbf24" opacity="0.7"/>
+    <ellipse cx="40" cy="118" rx="8" ry="6" fill="#f59e0b" opacity="0.8"/>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <circle cx="175" cy="115" r="24" fill="#fecaca" opacity="0.6"/>
+  <circle cx="425" cy="135" r="31" fill="#fca5a5" opacity="0.5"/>
+  <circle cx="460" cy="265" r="28" fill="#f87171" opacity="0.4"/>
+  <circle cx="140" cy="285" r="36" fill="#fee2e2" opacity="0.3"/>
+  
+  <!-- Text -->
+  <text x="300" y="340" font-size="28" font-weight="bold" fill="#dc2626" text-anchor="middle">E-commerce</text>
+  <text x="300" y="370" font-size="14" fill="#6b7280" text-anchor="middle">Plateformes complètes</text>
+</svg>
+

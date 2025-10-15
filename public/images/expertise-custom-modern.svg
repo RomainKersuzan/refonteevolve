@@ -1,0 +1,37 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="customGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#ea580c"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="#fff7ed"/>
+  
+  <!-- Main Shape -->
+  <circle cx="300" cy="200" r="120" fill="url(#customGrad)" opacity="0.1"/>
+  <circle cx="300" cy="200" r="90" fill="url(#customGrad)" opacity="0.2"/>
+  
+  <!-- Gear/Cog Icon -->
+  <g transform="translate(250, 150)">
+    <circle cx="50" cy="50" r="35" fill="url(#customGrad)"/>
+    <circle cx="50" cy="50" r="20" fill="#fff7ed"/>
+    <!-- Cog teeth -->
+    <rect x="45" y="8" width="10" height="15" rx="2" fill="url(#customGrad)"/>
+    <rect x="45" y="77" width="10" height="15" rx="2" fill="url(#customGrad)"/>
+    <rect x="8" y="45" width="15" height="10" rx="2" fill="url(#customGrad)"/>
+    <rect x="77" y="45" width="15" height="10" rx="2" fill="url(#customGrad)"/>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <circle cx="180" cy="115" r="26" fill="#fed7aa" opacity="0.6"/>
+  <circle cx="420" cy="135" r="33" fill="#fdba74" opacity="0.5"/>
+  <circle cx="455" cy="265" r="29" fill="#fb923c" opacity="0.4"/>
+  <circle cx="145" cy="285" r="37" fill="#ffedd5" opacity="0.3"/>
+  
+  <!-- Text -->
+  <text x="300" y="340" font-size="28" font-weight="bold" fill="#ea580c" text-anchor="middle">Solutions Sur Mesure</text>
+  <text x="300" y="370" font-size="14" fill="#6b7280" text-anchor="middle">Développement personnalisé</text>
+</svg>
+

@@ -1,0 +1,66 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Figma/Design Tool Interface -->
+  <rect width="800" height="600" fill="#18181b"/>
+  
+  <!-- Top Bar -->
+  <rect width="800" height="50" fill="#27272a"/>
+  <text x="20" y="32" font-size="16" font-weight="bold" fill="white">Figma</text>
+  <text x="350" y="32" font-size="13" fill="#a1a1aa">Logo Design - Client ABC</text>
+  <rect x="700" y="15" width="80" height="25" rx="6" fill="#7c3aed"/>
+  <text x="740" y="32" font-size="12" fill="white" text-anchor="middle">Share</text>
+  
+  <!-- Left Sidebar -->
+  <rect width="60" height="550" y="50" fill="#27272a"/>
+  
+  <!-- Tools -->
+  <rect x="15" y="70" width="30" height="30" rx="4" fill="#3f3f46"/>
+  <text x="30" y="92" font-size="18" fill="white" text-anchor="middle">↖️</text>
+  
+  <rect x="15" y="115" width="30" height="30" rx="4" fill="#7c3aed"/>
+  <text x="30" y="137" font-size="18" fill="white" text-anchor="middle">⬜</text>
+  
+  <rect x="15" y="160" width="30" height="30" rx="4" fill="#3f3f46"/>
+  <text x="30" y="182" font-size="18" fill="white" text-anchor="middle">⭕</text>
+  
+  <rect x="15" y="205" width="30" height="30" rx="4" fill="#3f3f46"/>
+  <text x="30" y="227" font-size="16" fill="white" text-anchor="middle">T</text>
+  
+  <!-- Canvas -->
+  <rect x="60" y="50" width="740" height="550" fill="#18181b"/>
+  
+  <!-- Artboard -->
+  <rect x="250" y="100" width="400" height="400" rx="8" fill="white"/>
+  
+  <!-- Logo Design -->
+  <circle cx="450" cy="230" r="60" fill="url(#luxGrad)"/>
+  <text x="450" y="245" font-size="36" font-weight="bold" fill="white" text-anchor="middle">E</text>
+  
+  <text x="450" y="330" font-size="28" font-weight="bold" fill="#1f2937" text-anchor="middle">EVOLVE</text>
+  <text x="450" y="360" font-size="16" fill="#7c3aed" text-anchor="middle">TECH</text>
+  
+  <!-- Color Palette -->
+  <text x="270" y="420" font-size="12" fill="#6b7280">Palette de couleurs:</text>
+  <circle cx="270" cy="450" r="18" fill="#7c3aed"/>
+  <circle cx="310" cy="450" r="18" fill="#a855f7"/>
+  <circle cx="350" cy="450" r="18" fill="#1f2937"/>
+  <circle cx="390" cy="450" r="18" fill="#f3f4f6"/>
+  
+  <!-- Typography -->
+  <text x="450" y="420" font-size="12" fill="#6b7280">Typographies:</text>
+  <text x="450" y="445" font-size="16" font-weight="bold" fill="#1f2937">Inter Bold</text>
+  <text x="450" y="465" font-size="14" fill="#6b7280">Inter Regular</text>
+  
+  <!-- Right Sidebar -->
+  <rect x="670" y="50" width="130" height="550" fill="#27272a"/>
+  <text x="685" y="80" font-size="11" font-weight="bold" fill="#a1a1aa">LAYERS</text>
+  
+  <rect x="685" y="95" width="100" height="30" rx="4" fill="#3f3f46"/>
+  <text x="735" y="115" font-size="11" fill="white" text-anchor="middle">Logo Circle</text>
+  
+  <rect x="685" y="135" width="100" height="30" rx="4" fill="#3f3f46"/>
+  <text x="735" y="155" font-size="11" fill="white" text-anchor="middle">Text EVOLVE</text>
+  
+  <rect x="685" y="175" width="100" height="30" rx="4" fill="#3f3f46"/>
+  <text x="735" y="195" font-size="11" fill="white" text-anchor="middle">Background</text>
+</svg>
+

@@ -1,0 +1,35 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Browser mockup -->
+  <rect width="400" height="300" fill="#f0fdf4"/>
+  <rect width="400" height="40" fill="#d1fae5"/>
+  <circle cx="15" cy="20" r="5" fill="#ef4444"/>
+  <circle cx="35" cy="20" r="5" fill="#f59e0b"/>
+  <circle cx="55" cy="20" r="5" fill="#10b981"/>
+  
+  <!-- Shopify Dashboard -->
+  <rect x="20" y="60" width="360" height="220" rx="8" fill="white" stroke="#d1fae5" stroke-width="2"/>
+  
+  <!-- Shopify icon -->
+  <circle cx="200" cy="140" r="40" fill="url(#grad2)"/>
+  <path d="M 190 130 L 195 145 L 200 130 L 205 145 L 210 130" stroke="white" stroke-width="3" fill="none"/>
+  
+  <!-- Stats -->
+  <rect x="30" y="200" width="100" height="60" rx="6" fill="#f0fdf4"/>
+  <text x="80" y="225" font-size="18" font-weight="bold" fill="#059669" text-anchor="middle">$10K</text>
+  <text x="80" y="245" font-size="10" fill="#6b7280" text-anchor="middle">Sales</text>
+  
+  <rect x="150" y="200" width="100" height="60" rx="6" fill="#f0fdf4"/>
+  <text x="200" y="225" font-size="18" font-weight="bold" fill="#059669" text-anchor="middle">250</text>
+  <text x="200" y="245" font-size="10" fill="#6b7280" text-anchor="middle">Orders</text>
+  
+  <rect x="270" y="200" width="100" height="60" rx="6" fill="#f0fdf4"/>
+  <text x="320" y="225" font-size="18" font-weight="bold" fill="#059669" text-anchor="middle">4.8★</text>
+  <text x="320" y="245" font-size="10" fill="#6b7280" text-anchor="middle">Rating</text>
+</svg>
+

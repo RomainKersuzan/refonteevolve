@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40">
+  <!-- Malt Logo simplifié -->
+  <rect x="2" y="8" width="24" height="24" rx="4" fill="#FC5757"/>
+  <text x="13" y="27" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="white" text-anchor="middle">M</text>
+  
+  <!-- Text "Malt" -->
+  <text x="32" y="27" font-family="Arial, sans-serif" font-weight="700" font-size="20" fill="#FC5757">
+    Malt
+  </text>
+</svg>

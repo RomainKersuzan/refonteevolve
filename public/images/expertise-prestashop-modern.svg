@@ -1,0 +1,37 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="modernGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="#fafafa"/>
+  
+  <!-- Main Shape -->
+  <circle cx="300" cy="200" r="120" fill="url(#modernGrad)" opacity="0.1"/>
+  <circle cx="300" cy="200" r="90" fill="url(#modernGrad)" opacity="0.2"/>
+  
+  <!-- Shopping Icon -->
+  <g transform="translate(250, 150)">
+    <!-- Cart -->
+    <rect x="10" y="30" width="80" height="60" rx="8" fill="url(#modernGrad)"/>
+    <circle cx="30" cy="100" r="8" fill="url(#modernGrad)"/>
+    <circle cx="70" cy="100" r="8" fill="url(#modernGrad)"/>
+    
+    <!-- Handle -->
+    <path d="M 20 30 L 20 15 Q 20 5 30 5 L 70 5 Q 80 5 80 15 L 80 30" stroke="url(#modernGrad)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <circle cx="150" cy="100" r="20" fill="#e9d5ff" opacity="0.6"/>
+  <circle cx="450" cy="120" r="30" fill="#c4b5fd" opacity="0.4"/>
+  <circle cx="480" cy="280" r="25" fill="#ddd6fe" opacity="0.5"/>
+  <circle cx="120" cy="300" r="35" fill="#f3e8ff" opacity="0.3"/>
+  
+  <!-- Text -->
+  <text x="300" y="340" font-size="28" font-weight="bold" fill="#7c3aed" text-anchor="middle">PrestaShop</text>
+  <text x="300" y="370" font-size="14" fill="#6b7280" text-anchor="middle">Boutiques e-commerce performantes</text>
+</svg>
+
