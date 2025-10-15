@@ -17,7 +17,7 @@ Votre code est maintenant sur GitHub : https://github.com/RomainKersuzan/refonte
 ssh root@193.203.191.237
 ```
 
-**Mot de passe :** `BMXouf47.Romking`
+(Entrez votre mot de passe serveur)
 
 ---
 

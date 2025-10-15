@@ -18,13 +18,13 @@ tar -czf evolvetech-deploy.tar.gz --exclude=node_modules --exclude=.next --exclu
 ```bash
 scp evolvetech-deploy.tar.gz root@193.203.191.237:/tmp/
 ```
-Mot de passe : `BMXouf47.Romking`
+(Entrez votre mot de passe serveur quand demandé)
 
 **4. Connectez-vous au serveur :**
 ```bash
 ssh root@193.203.191.237
 ```
-Mot de passe : `BMXouf47.Romking`
+(Entrez votre mot de passe serveur quand demandé)
 
 **5. Sur le serveur, exécutez :**
 ```bash
