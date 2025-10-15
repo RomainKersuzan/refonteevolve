@@ -274,7 +274,7 @@ export default function Home() {
           >
             {/* Title - Animation uniquement au début */}
             <motion.h1 
-              className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
+              className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight px-4"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -284,7 +284,7 @@ export default function Home() {
 
             {/* Description - Animation uniquement au début */}
             <motion.p 
-              className="text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto"
+              className="text-lg sm:text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto px-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
@@ -322,19 +322,19 @@ export default function Home() {
 
             {/* Stats - Animation uniquement au début */}
             <motion.div 
-              className="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto"
+              className="mt-12 sm:mt-16 grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto px-4"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1 }}
             >
               {[
-                { number: '100+', label: 'Projets réalisés' },
-                { number: '100%', label: 'Clients satisfaits' },
-                { number: '5+', label: 'Ans d\'expérience' },
+                { number: '100+', label: 'Projets' },
+                { number: '100%', label: 'Satisfaits' },
+                { number: '5+', label: 'Ans' },
               ].map((stat, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold mb-1">{stat.number}</div>
-                  <div className="text-sm md:text-base text-gray-200">{stat.label}</div>
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1">{stat.number}</div>
+                  <div className="text-xs sm:text-sm md:text-base text-gray-200">{stat.label}</div>
                 </div>
               ))}
             </motion.div>

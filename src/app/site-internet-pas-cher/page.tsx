@@ -78,10 +78,10 @@ export default function SiteInternetPasCher() {
                 <div className="inline-block px-4 py-2 bg-white/20 rounded-full mb-4">
                   <span className="text-sm font-semibold">Offre exclusive</span>
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                   Site Internet Professionnel à <span className="text-yellow-300">499€</span>
                 </h1>
-                <p className="text-xl md:text-2xl mb-8 text-gray-100">
+                <p className="text-lg sm:text-xl md:text-2xl mb-8 text-gray-100">
                   Créez votre site web professionnel en <strong className="text-white">48 heures</strong> seulement ! 
                   Qualité garantie, livraison express et prix imbattable.
                 </p>

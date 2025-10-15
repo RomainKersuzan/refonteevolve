@@ -119,7 +119,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className={`md:hidden text-2xl transition-colors ${
+            className={`md:hidden text-2xl transition-colors p-2 ${
               isScrolled ? 'text-gray-700' : 'text-white'
             }`}
             onClick={() => setIsOpen(!isOpen)}
@@ -137,14 +137,14 @@ const Header = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white/95 backdrop-blur-md border-t"
+            className="md:hidden bg-white backdrop-blur-md shadow-lg"
           >
-            <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+            <nav className="container mx-auto px-4 py-6 flex flex-col space-y-3">
               {menuItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-gray-700 hover:text-primary-600 font-medium transition-colors py-2"
+                  className="text-gray-900 hover:text-primary-600 font-semibold transition-colors py-3 px-4 rounded-lg hover:bg-gray-50"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
@@ -152,7 +152,7 @@ const Header = () => {
               ))}
               <Link
                 href="/contact"
-                className="px-6 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-all text-center"
+                className="px-6 py-4 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-lg font-bold hover:from-primary-700 hover:to-secondary-700 transition-all text-center shadow-lg"
                 onClick={() => setIsOpen(false)}
               >
                 Devis gratuit

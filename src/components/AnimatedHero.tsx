@@ -138,36 +138,36 @@ const AnimatedHero = ({ title, subtitle, highlightedWord }: AnimatedHeroProps) =
 
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center"
-        >
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            {highlightedWord ? (
-              <>
-                {title.split(highlightedWord)[0]}
-                <span className="bg-gradient-to-r from-white to-secondary-200 bg-clip-text text-transparent">
-                  {highlightedWord}
-                </span>
-                {title.split(highlightedWord)[1]}
-              </>
-            ) : (
-              title
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center px-4"
+          >
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              {highlightedWord ? (
+                <>
+                  {title.split(highlightedWord)[0]}
+                  <span className="bg-gradient-to-r from-white to-secondary-200 bg-clip-text text-transparent">
+                    {highlightedWord}
+                  </span>
+                  {title.split(highlightedWord)[1]}
+                </>
+              ) : (
+                title
+              )}
+            </h1>
+            {subtitle && (
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-100 max-w-3xl mx-auto"
+              >
+                {subtitle}
+              </motion.p>
             )}
-          </h1>
-          {subtitle && (
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto"
-            >
-              {subtitle}
-            </motion.p>
-          )}
-        </motion.div>
+          </motion.div>
       </div>
 
       {/* Wave */}
