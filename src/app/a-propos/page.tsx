@@ -81,8 +81,74 @@ export default function AProposPage() {
         highlightedWord="EvolveTech"
       />
 
-      {/* Story Section */}
+      {/* Parcours Scolaire Section */}
       <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold mb-8 text-gray-900 text-center">Parcours de Romain Kersuzan</h2>
+            
+            <div className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-2xl p-8 md:p-12 mb-12">
+              <div className="flex items-center gap-6 mb-8">
+                <div className="relative w-24 h-24">
+                  <Image 
+                    src="/photo-romain.webp" 
+                    alt="Romain Kersuzan" 
+                    fill
+                    className="rounded-full object-cover shadow-lg ring-4 ring-primary-100"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Romain Kersuzan</h3>
+                  <p className="text-lg text-primary-600 font-semibold">Fondateur d&apos;EvolveTech</p>
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-xl font-bold text-gray-900 mb-3">Formation académique</h4>
+                  <div className="space-y-4">
+                    <div className="flex gap-4">
+                      <div className="flex-shrink-0 w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center">
+                        <span className="text-2xl font-bold text-primary-600">M</span>
+                      </div>
+                      <div>
+                        <h5 className="font-bold text-gray-900">Maîtrise en Informatique</h5>
+                        <p className="text-primary-600 font-semibold">UQAC - Université du Québec à Chicoutimi, Canada</p>
+                        <p className="text-gray-600 text-sm">Spécialisation en développement web et systèmes d&apos;information</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-4">
+                      <div className="flex-shrink-0 w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center">
+                        <span className="text-2xl font-bold text-primary-600">E</span>
+                      </div>
+                      <div>
+                        <h5 className="font-bold text-gray-900">Diplôme d&apos;Ingénieur</h5>
+                        <p className="text-primary-600 font-semibold">ESILV - École Supérieure d&apos;Ingénieurs Léonard de Vinci</p>
+                        <p className="text-gray-600 text-sm">Formation complète en informatique et nouvelles technologies</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-6 border-t border-gray-300">
+                  <h4 className="text-xl font-bold text-gray-900 mb-3">Expertises développées</h4>
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                    {['PrestaShop', 'Shopify', 'Next.js', 'React', 'PHP', 'JavaScript', 'TypeScript', 'Node.js', 'MySQL'].map((tech, i) => (
+                      <div key={i} className="bg-white rounded-lg px-3 py-2 text-center shadow">
+                        <span className="text-sm font-semibold text-gray-700">{tech}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Story Section */}
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold mb-8 text-gray-900 text-center">Notre Histoire</h2>
