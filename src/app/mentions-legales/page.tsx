@@ -20,7 +20,7 @@ export default function MentionsLegalesPage() {
                 Forme juridique : Société par actions simplifiée (SAS)<br />
                 <strong>SIREN :</strong> 933974073<br />
                 <strong>Adresse :</strong> 14 sentier du potager, 92190 MEUDON, France<br />
-                <strong>Téléphone :</strong> 06 46 69 21 20<br />
+                <strong>Téléphone :</strong> +33 6 46 69 21 20<br />
                 <strong>E-mail :</strong> contact@evolvetech.fr<br />
                 <strong>Président :</strong> Romain KERSUZAN
               </p>

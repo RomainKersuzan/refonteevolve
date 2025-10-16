@@ -103,7 +103,7 @@ export default function PolitiqueConfidentialitePage() {
                 Pour toute question concernant cette politique de confidentialité, 
                 contactez-nous à :<br />
                 <strong>Email :</strong> <a href="mailto:contact@evolvetech.fr">contact@evolvetech.fr</a><br />
-                <strong>Téléphone :</strong> 06 46 69 21 20
+                <strong>Téléphone :</strong> +33 6 46 69 21 20
               </p>
             </div>
 

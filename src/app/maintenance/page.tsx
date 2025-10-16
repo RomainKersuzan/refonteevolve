@@ -435,10 +435,10 @@ export default function MaintenancePage() {
                 Demander un devis
               </Link>
               <a 
-                href="tel:0646692120"
+                href="tel:+33646692120"
                 className="px-8 py-4 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition-all flex items-center justify-center gap-2"
               >
-                <FaHeadset /> 06 46 69 21 20
+                <FaHeadset /> +33 6 46 69 21 20
               </a>
             </div>
             

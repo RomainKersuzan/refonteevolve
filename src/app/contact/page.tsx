@@ -14,8 +14,8 @@ const contactInfo = [
   {
     icon: FaPhone,
     title: 'Téléphone',
-    value: '06 46 69 21 20',
-    link: 'tel:0646692120',
+    value: '+33 6 46 69 21 20',
+    link: 'tel:+33646692120',
   },
   {
     icon: FaMapMarkerAlt,

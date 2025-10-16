@@ -122,10 +122,10 @@ export default function SiteInternetPasCher() {
                     Commander maintenant →
                   </a>
                   <a 
-                    href="tel:0646692120" 
+                    href="tel:+33646692120" 
                     className="px-8 py-4 bg-white/20 text-white rounded-lg font-semibold hover:bg-white/30 transition-all backdrop-blur-sm text-center flex items-center justify-center gap-2"
                   >
-                    <FaPhone /> 06 46 69 21 20
+                    <FaPhone /> +33 6 46 69 21 20
                   </a>
                 </div>
               </div>
@@ -527,7 +527,7 @@ export default function SiteInternetPasCher() {
             Commander maintenant - 499€
           </a>
           <p className="mt-4 text-sm text-gray-400">
-            Ou appelez-nous : <a href="tel:0646692120" className="text-yellow-400 hover:underline">06 46 69 21 20</a>
+            Ou appelez-nous : <a href="tel:+33646692120" className="text-yellow-400 hover:underline">+33 6 46 69 21 20</a>
           </p>
         </div>
       </section>
