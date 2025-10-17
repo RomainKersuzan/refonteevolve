@@ -34,8 +34,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr" className={inter.variable}>
-      <body className="antialiased">
+    <html lang="fr">
+      <body className={`${plusJakarta.className} antialiased`}>
         <Header />
         <main>{children}</main>
         <Footer />
