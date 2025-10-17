@@ -129,9 +129,9 @@ export default function ExpertisesPage() {
       />
 
       {/* Expertises Grid */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12">
             {expertises.map((expertise, index) => (
               <div key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100">
                 <div className={`bg-gradient-to-r ${expertise.color} p-8 text-white`}>

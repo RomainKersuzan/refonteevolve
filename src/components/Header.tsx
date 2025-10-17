@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { FaBars, FaTimes } from 'react-icons/fa'
+import { FaBars, FaTimes, FaShoppingCart, FaShopify, FaCode, FaRocket, FaCog, FaPalette, FaSearch, FaTools } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
 import MegaMenu from './MegaMenu'
 
@@ -155,27 +155,28 @@ const Header = () => {
                 ))}
               </div>
 
-              {/* Services */}
+              {/* Services avec icônes */}
               <div className="mb-6">
                 <h3 className="text-sm font-bold text-gray-400 uppercase mb-3 px-4">Nos Services</h3>
-                <div className="grid grid-cols-2 gap-2">
+                <div className="space-y-1">
                   {[
-                    { name: 'PrestaShop', link: '/expertises/prestashop' },
-                    { name: 'Shopify', link: '/expertises/shopify' },
-                    { name: 'Sites Vitrines', link: '/expertises/sites-vitrines' },
-                    { name: 'E-commerce', link: '/expertises/e-commerce' },
-                    { name: 'Sur Mesure', link: '/expertises/solutions-sur-mesure' },
-                    { name: 'Design', link: '/expertises/design-graphique' },
-                    { name: 'SEO', link: '/expertises/seo' },
-                    { name: 'Maintenance', link: '/maintenance' },
+                    { name: 'PrestaShop', link: '/expertises/prestashop', icon: FaShoppingCart, color: 'text-blue-600' },
+                    { name: 'Shopify', link: '/expertises/shopify', icon: FaShopify, color: 'text-green-600' },
+                    { name: 'Sites Vitrines', link: '/expertises/sites-vitrines', icon: FaCode, color: 'text-purple-600' },
+                    { name: 'E-commerce', link: '/expertises/e-commerce', icon: FaRocket, color: 'text-red-600' },
+                    { name: 'Solutions Sur Mesure', link: '/expertises/solutions-sur-mesure', icon: FaCog, color: 'text-orange-600' },
+                    { name: 'Design Graphique', link: '/expertises/design-graphique', icon: FaPalette, color: 'text-pink-600' },
+                    { name: 'SEO', link: '/expertises/seo', icon: FaSearch, color: 'text-indigo-600' },
+                    { name: 'Maintenance', link: '/maintenance', icon: FaTools, color: 'text-gray-600' },
                   ].map((service, i) => (
                     <Link
                       key={i}
                       href={service.link}
-                      className="text-sm text-gray-700 hover:text-primary-600 font-medium py-2 px-3 rounded-lg hover:bg-gray-50 transition-colors text-center"
+                      className="flex items-center gap-3 text-gray-700 hover:text-primary-600 font-medium py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors"
                       onClick={() => setIsOpen(false)}
                     >
-                      {service.name}
+                      <service.icon className={`text-lg ${service.color}`} />
+                      <span>{service.name}</span>
                     </Link>
                   ))}
                 </div>
