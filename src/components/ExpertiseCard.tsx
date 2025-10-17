@@ -35,9 +35,9 @@ const ExpertiseCard = ({ icon: Icon, title, description, link, index, image, ico
               />
             </div>
           )}
-          <div className="p-8">
+          <div className="p-4 sm:p-6 md:p-8">
             {iconImage ? (
-              <div className="flex items-center justify-center w-16 h-16 mb-6">
+              <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 mb-4 sm:mb-6 mx-auto">
                 <Image 
                   src={iconImage} 
                   alt={title}
@@ -47,15 +47,15 @@ const ExpertiseCard = ({ icon: Icon, title, description, link, index, image, ico
                 />
               </div>
             ) : (
-              <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-lg mb-6 shadow-lg">
-                <Icon className="text-white text-3xl" />
+              <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-lg mb-4 sm:mb-6 shadow-lg mx-auto">
+                <Icon className="text-white text-2xl sm:text-3xl" />
               </div>
             )}
-            <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-primary-600 transition-colors">{title}</h3>
-            <p className="text-gray-600 leading-relaxed">{description}</p>
-            <div className="mt-6 text-primary-600 font-semibold flex items-center group-hover:gap-3 transition-all">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 text-gray-900 group-hover:text-primary-600 transition-colors text-center sm:text-left">{title}</h3>
+            <p className="text-sm sm:text-base text-gray-600 leading-relaxed text-center sm:text-left">{description}</p>
+            <div className="mt-4 sm:mt-6 text-primary-600 font-semibold flex items-center justify-center sm:justify-start group-hover:gap-3 transition-all text-sm sm:text-base">
               En savoir plus
-              <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </div>
