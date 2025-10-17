@@ -50,15 +50,20 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center transition-transform hover:scale-105">
+          <Link href="/" className="flex items-center gap-3 transition-transform hover:scale-105">
             <Image 
-              src="/logo.png" 
-              alt="EvolveTech Logo" 
-              width={130} 
-              height={38}
+              src="/logo-mini.png" 
+              alt="EvolveTech" 
+              width={40} 
+              height={40}
               priority
-              className={`w-auto transition-all ${isScrolled ? 'h-7' : 'h-8'}`}
+              className={`w-auto transition-all ${isScrolled ? 'h-9' : 'h-10'}`}
             />
+            <span className={`font-bold text-xl transition-colors ${
+              isScrolled ? 'text-gray-900' : 'text-white'
+            }`}>
+              EvolveTech
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -9,14 +9,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* À propos */}
           <div>
-            <Link href="/" className="inline-block mb-4">
+            <Link href="/" className="flex items-center gap-3 mb-4">
               <Image 
-                src="/logo-white.png" 
-                alt="EvolveTech Logo" 
-                width={140} 
-                height={40}
-                className="h-8 w-auto brightness-0 invert"
+                src="/logo-mini.png" 
+                alt="EvolveTech" 
+                width={36} 
+                height={36}
+                className="h-9 w-auto brightness-0 invert"
               />
+              <span className="font-bold text-xl text-white">EvolveTech</span>
             </Link>
             <p className="text-sm mb-4">
               EvolveTech est une agence web 360° spécialisée dans le développement de solutions e-commerce et web sur mesure.
