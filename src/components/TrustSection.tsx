@@ -46,15 +46,15 @@ const TrustSection = () => {
           <p className="text-gray-600">Basé sur plus de 100 avis clients</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all"
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ delay: Math.min(index * 0.1, 0.2) }}
+              className="bg-white rounded-xl shadow-lg p-4 sm:p-6 hover:shadow-xl transition-all"
             >
               <div className="flex items-center justify-between mb-3">
                 <FaQuoteLeft className="text-primary-400 text-2xl" />

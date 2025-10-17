@@ -355,21 +355,21 @@ export default function Home() {
       </section>
 
       {/* Expertises Section */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Nos Expertises</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-gray-900">Nos Expertises</h2>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               Des solutions web complètes pour tous vos besoins digitaux
             </p>
           </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {expertises.map((expertise, index) => (
               <ExpertiseCard key={index} {...expertise} index={index} />
             ))}
@@ -417,21 +417,21 @@ export default function Home() {
       </section> */}
 
       {/* Team Section */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Notre Équipe</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-gray-900">Notre Équipe</h2>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               Des experts passionnés au service de vos projets
             </p>
           </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
             {team.map((member, index) => (
               <TeamMember key={index} {...member} index={index} />
             ))}

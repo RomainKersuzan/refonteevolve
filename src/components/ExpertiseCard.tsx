@@ -20,8 +20,8 @@ const ExpertiseCard = ({ icon: Icon, title, description, link, index, image, ico
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.5, delay: Math.min(index * 0.1, 0.3) }}
     >
       <Link href={link}>
         <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 h-full border border-gray-100 group">

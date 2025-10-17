@@ -19,8 +19,8 @@ const TeamMember = ({ name, role, image, linkedin, index }: TeamMemberProps) => 
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.5, delay: Math.min(index * 0.1, 0.3) }}
       className="text-center group"
     >
       <div className="relative mb-6 overflow-hidden rounded-xl aspect-square">

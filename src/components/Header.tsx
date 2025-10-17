@@ -134,25 +134,57 @@ const Header = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white backdrop-blur-md shadow-lg"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+            className="md:hidden fixed inset-x-0 top-20 bg-white shadow-2xl z-[9998] max-h-[calc(100vh-5rem)] overflow-y-auto"
           >
-            <nav className="container mx-auto px-4 py-6 flex flex-col space-y-3">
-              {menuItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="text-gray-900 hover:text-primary-600 font-semibold transition-colors py-3 px-4 rounded-lg hover:bg-gray-50"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              ))}
+            <nav className="px-4 py-6">
+              {/* Menu principal */}
+              <div className="space-y-2 mb-6">
+                {menuItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="block text-gray-900 hover:text-primary-600 font-semibold py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+
+              {/* Services */}
+              <div className="mb-6">
+                <h3 className="text-sm font-bold text-gray-400 uppercase mb-3 px-4">Nos Services</h3>
+                <div className="grid grid-cols-2 gap-2">
+                  {[
+                    { name: 'PrestaShop', link: '/expertises/prestashop' },
+                    { name: 'Shopify', link: '/expertises/shopify' },
+                    { name: 'Sites Vitrines', link: '/expertises/sites-vitrines' },
+                    { name: 'E-commerce', link: '/expertises/e-commerce' },
+                    { name: 'Sur Mesure', link: '/expertises/solutions-sur-mesure' },
+                    { name: 'Design', link: '/expertises/design-graphique' },
+                    { name: 'SEO', link: '/expertises/seo' },
+                    { name: 'Maintenance', link: '/maintenance' },
+                  ].map((service, i) => (
+                    <Link
+                      key={i}
+                      href={service.link}
+                      className="text-sm text-gray-700 hover:text-primary-600 font-medium py-2 px-3 rounded-lg hover:bg-gray-50 transition-colors text-center"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {service.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* CTA */}
               <Link
                 href="/contact"
-                className="px-6 py-4 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-lg font-bold hover:from-primary-700 hover:to-secondary-700 transition-all text-center shadow-lg"
+                className="block px-6 py-4 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-lg font-bold text-center shadow-lg"
                 onClick={() => setIsOpen(false)}
               >
                 Devis gratuit

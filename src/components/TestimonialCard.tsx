@@ -17,9 +17,9 @@ const TestimonialCard = ({ text, author, company, date, index, rating = 5 }: Tes
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all"
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.5, delay: Math.min(index * 0.1, 0.2) }}
+      className="bg-white rounded-xl shadow-lg p-6 sm:p-8 hover:shadow-xl transition-all"
     >
       <div className="flex items-center justify-between mb-4">
         <FaQuoteLeft className="text-primary-400 text-3xl" />
